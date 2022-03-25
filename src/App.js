@@ -8,7 +8,7 @@ import './css/styles.css';
 function App() {
   return (
     <div className="App">
-      <GameCanvas></GameCanvas>
+      <GameCanvas id="game-canvas"></GameCanvas>
       <div id="buttons-game">
         <img id="expand-op" src={Up} /><button id="quality-bt">
           Calidad: FULL
