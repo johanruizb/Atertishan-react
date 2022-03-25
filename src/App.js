@@ -1,23 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
+import './js/script';
+import GameCanvas from './js/script';
+import Up from './img/up.png';
+import './css/styles.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <GameCanvas></GameCanvas>
+      <div id="buttons-game">
+        <img id="expand-op" src={Up} /><button id="quality-bt">
+          Calidad: FULL
+        </button>
+      </div>
     </div>
   );
 }
