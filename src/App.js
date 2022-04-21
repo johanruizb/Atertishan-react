@@ -1,19 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
-import './js/script';
-import GameCanvas from './js/script';
-import Up from './img/up.png';
-import './css/styles.css';
+import "./App.css";
+import "./js/script";
+import GameCanvas from "./js/script";
+import GameBackground from "./js/background";
+import "./css/styles.css";
 
 function App() {
+  //<GameCanvas id="game-canvas"></GameCanvas>
+  //<GameMedia id="game-md"></GameMedia>
   return (
     <div className="App">
+      <canvas id="game-bg"></canvas>
+      <canvas id="game-md"></canvas>
       <GameCanvas id="game-canvas"></GameCanvas>
-      <div id="buttons-game">
-        <img id="expand-op" src={Up} /><button id="quality-bt">
-          Calidad: FULL
-        </button>
-      </div>
     </div>
   );
 }
